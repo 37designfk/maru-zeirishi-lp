@@ -42,15 +42,17 @@
   /* hero */
   .hero{padding:96px 0 88px;border-bottom:1px solid var(--line);position:relative;overflow:hidden;
     background-image:
-      linear-gradient(96deg, var(--paper) 0%, var(--paper) 26%, rgba(251,250,247,.94) 42%, rgba(251,250,247,.60) 60%, rgba(251,250,247,.26) 80%, rgba(251,250,247,.10) 100%),
+      linear-gradient(96deg, var(--paper) 0%, var(--paper) 22%, rgba(251,250,247,.92) 36%, rgba(251,250,247,.45) 52%, rgba(251,250,247,.12) 68%, transparent 100%),
       url("assets/hero.jpg");
     background-size:cover,cover;
     background-position:center,right bottom;
-    background-repeat:no-repeat,no-repeat;}
+    background-repeat:no-repeat,no-repeat;
+    min-height:480px;}
   @media(max-width:680px){
     .hero{
+      min-height:auto;
       background-image:
-        linear-gradient(180deg, var(--paper) 0%, var(--paper) 32%, rgba(251,250,247,.88) 56%, rgba(251,250,247,.5) 100%),
+        linear-gradient(180deg, var(--paper) 0%, var(--paper) 28%, rgba(251,250,247,.85) 50%, rgba(251,250,247,.4) 100%),
         url("assets/hero.jpg");
       background-position:center,center bottom;}
   }
